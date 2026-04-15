@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>SmartHouse | Sua Casa Inteligente</title>
+    <style>
+        
+        body {
+            
+            background-image: url('banner (2).jpg'); 
+            background-size: cover;
+            background-attachment: fixed; 
+            background-position: center;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        
+        header {
+            position: sticky; /* Faz o menu "grudar" no topo ao rolar */
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        .faixa-azul {
+            background-color: #1a237e; /* Azul escuro da logo */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 3px solid #b71c1c; /* Linha vermelha da imagem */
+        }
+
+        nav {
+            background-color: #283593;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #ff5252;
+        }
+
+        /* 3. CONTAINER CENTRAL (Onde o conteúdo "flutua") */
+        main {
+            position: relative; 
+            background-color: rgba(255, 255, 255, 0.95); /* Branco com leve transparência */
+            width: 80%;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+        }
+
+        .banner-principal {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="faixa-azul">
+            <h1>SMARTHOUSE</h1>
+            <p>A SUA CASA INTELIGENTE!</p>
+        </div>
+        <nav>
+            <a href="home2.html">Página Inicial</a>
+            <a href="produtos.html">Ver Produtos</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main>
+        <p>Ofertas de Hoje!</p>
+        
+        <img src="banner (2).jpg" alt="Banner Smarthouse" class="banner-principal">
+
+        <section>
+            <h2>Explore nossa página:</h2>
+            <p>Sua casa merece a melhor tecnologia do mercado.</p>
+
+        <section>
+            <h3>Veja como funciona:</h3>
+            <video width="480" controls>
+                <source src="vitrini de produtos.mp4" type="video/mp4">
+            </video>
+        </section>
+    </main>
+
+
+
+</body>
+</html>

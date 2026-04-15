@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMARTHOUSE| Fale Conosco</title>
+    <style>
+        /* Estilo para manter o padrão das páginas anteriores */
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background-color: #f0f2f5; }
+        header { background-color: #003399; color: white; padding: 20px 0; text-align: center; border-bottom: 6px solid #e31d1a; }
+        
+        nav { background: #fff; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { text-decoration: none; color: #003399; font-weight: bold; margin: 0 20px; }
+        nav a:hover { color: #e31d1a; }
+
+        main { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: #003399; text-align: center; margin-bottom: 20px; }
+
+        /* TABELA PARA ALINHAMENTO (Requisito da Aula 2) */
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 12px; vertical-align: middle; }
+        .label-cell { width: 35%; font-weight: bold; text-align: right; color: #333; padding-right: 20px; }
+        
+        /* Estilo dos Inputs */
+        input, select, textarea { 
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+        }
+        input:focus { border-color: #003399; outline: none; background-color: #f9fbff; }
+
+        .btn-enviar { 
+            background-color: #e31d1a; 
+            color: white; 
+            border: none; 
+            padding: 15px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            width: 100%; 
+            text-transform: uppercase;
+        }
+        .btn-enviar:hover { background-color: #b31614; }
+
+        /* --- ESTILO DA MENSAGEM DE SUCESSO (SUA SUGESTÃO) --- */
+        .msg-sucesso {
+            display: none; /* Começa escondida */
+            background-color: #d4edda; /* Fundo Verde */
+            color: #155724;           /* Texto Verde Escuro */
+            padding: 20px;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Faz a mensagem aparecer quando o formulário é enviado para #sucesso */
+        #sucesso:target {
+            display: block;
+        }
+
+        footer { text-align: center; padding: 20px; color: #888; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Atendimento SMARTHOUSE</h1>
+</header>
+
+<nav>
+    <a href="home2.html">INÍCIO</a>
+    <a href="produtos.html">PRODUTOS</a>
+    <a href="contato.html">FALE CONOSCO</a>
+</nav>
+
+<main>
+    <h2>Fale Conosco</h2>
+    
+    <form action="#sucesso" method="get">
+        <table>
+            <tr>
+                <td class="label-cell"><label for="nome">Nome Completo:</label></td>
+                <td><input type="text" id="nome" name="nome" placeholder="Seu nome aqui" required autofocus></td>
+            </tr>
+
+            <tr>
+                <td class="label-cell"><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" placeholder="email@exemplo.com" required></td>
+            </tr>
+
+            <tr>
+                <td class="label-cell"><label for="tel">Telefone:</label></td>
+                <td><input type="tel" id="tel" name="tel" placeholder="(11) 99999-9999"></td>
+            </tr>
+
+            <tr>
+                <td class="label-cell"><label for="pedido">Nº do Pedido:</label></td>
+                <td><input type="number" id="pedido" name="pedido" min="1" max="99999" placeholder="Apenas números"></td>
+            </tr>
+
+            <tr>
+                <td class="label-cell"><label for="assunto">Assunto:</label></td>
+                <td>
+                    <select id="assunto" name="assunto">
+                        <option value="duvida">Dúvida sobre Eletrônicos</option>
+                        <option value="entrega">Status da Entrega</option>
+                        <option value="financeiro">Carnê Digital</option>
+                        <option value="outro">Outros Assuntos</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="label-cell"><label for="msg">Mensagem:</label></td>
+                <td><textarea id="msg" name="msg" rows="4" placeholder="Como podemos ajudar?" required></textarea></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Enviar Mensagem" class="btn-enviar">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div id="sucesso" class="msg-sucesso">
+        sua mensagem foi enviada logo em breve entraremos em contato ✔
+    </div>
+</main>
+
+<footer>
+    <p><a href="home2.html" style="color: #003399;">Voltar para a Home</a></p>
+</footer>
+
+</body>
+</html>

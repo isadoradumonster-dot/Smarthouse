@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos | SMARTHOME</title>
+    <style>
+        /* Mantendo o padrão visual da Home */
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f0f2f5; }
+        header { background-color: #003399; color: white; padding: 15px 0; text-align: center; border-bottom: 6px solid #e31d1a; }
+        
+        nav { background: #fff; padding: 12px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        nav a { text-decoration: none; color: #003399; font-weight: bold; margin: 0 20px; }
+        nav a:hover { color: #e31d1a; }
+
+        main { max-width: 900px; margin: 20px auto; background: white; padding: 30px; border-radius: 8px; }
+        
+        h2 { color: #003399; border-left: 5px solid #e31d1a; padding-left: 10px; }
+
+        /* Estilo do Vídeo */
+        .video-secao { text-align: center; margin: 30px 0; padding: 20px; background-color: #f9f9f9; border-radius: 8px; }
+        video { width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        /* Estilo da Lista de Produtos */
+        .lista-produtos { margin-top: 20px; }
+        ol { padding-left: 20px; }
+        ol li { margin-bottom: 15px; font-size: 1.1em; color: #333; }
+        .preco { color: #e31d1a; font-weight: bold; display: block; font-size: 1.2em; }
+
+        /* Botão de Voltar */
+        .btn-voltar { display: inline-block; margin-top: 20px; padding: 10px 20px; background-color: #003399; color: white; text-decoration: none; border-radius: 5px; transition: 0.3s; }
+        .btn-voltar:hover { background-color: #e31d1a; }
+
+        footer { text-align: center; padding: 20px; color: #888; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Eletrônicos em Oferta</h1>
+</header>
+
+<nav>
+    <a href="home2.html">INÍCIO</a>
+    <a href="produtos.html">PRODUTOS</a>
+    <a href="contato.html">FALE CONOSCO</a>
+</nav>
+
+<main>
+    <h2>Destaque Tecnológico</h2>
+    <p>Confira alguns produtos da SMARTHOME:</p>
+
+    <section class="video-secao">
+        <video controls>
+            <source src="produtos.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </section>
+
+    <hr>
+
+    <h2>Mais Vendidos da Semana</h2>
+    <div class="lista-produtos">
+        <ol>
+            <li>
+                <strong>Smart TV 55" Crystal 4K</strong>
+                <span class="preco">R$ 2.599,00</span>
+            <img src="tv.jpg" width="150" height="100">
+
+            <li>
+                <strong>iPhone 15 Apple 128GB</strong>
+                <span class="preco">R$ 4.299,00</span>
+            <img src="iphone.jpg" width="150" height="100"
+            </li>
+            
+            <li> <strong>Notebook Gamer Acer Nitro 5</strong>
+                <span class="preco">R$ 3.850,00</span>
+            <img src="not.jpg" width="150" height="100"
+        </li>
+           
+            <li>
+                <strong>Console PlayStation 5 + Jogo</strong>
+                <span class="preco">R$ 3.690,00</span>
+            <img src="ps5.jpg" width="150" height="100"
+            </li>
+            </ol>
+    </div>
+
+    <a href="home2.html" class="btn-voltar">← Voltar para a Home</a>
+</main>
+
+
