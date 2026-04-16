@@ -2,33 +2,32 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartHouse | Sua Casa Inteligente</title>
+
     <style>
-        
         body {
-            
-            background-image: url('banner (2).jpg'); 
+            background-image: url('banner2.jpg'); /* melhor sem espaço no nome */
             background-size: cover;
-            background-attachment: fixed; 
+            background-attachment: fixed;
             background-position: center;
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        
         header {
-            position: sticky; /* Faz o menu "grudar" no topo ao rolar */
+            position: sticky;
             top: 0;
             z-index: 1000;
             width: 100%;
         }
 
         .faixa-azul {
-            background-color: #1a237e; /* Azul escuro da logo */
+            background-color: #1a237e;
             color: white;
             text-align: center;
             padding: 20px 0;
-            border-bottom: 3px solid #b71c1c; /* Linha vermelha da imagem */
+            border-bottom: 3px solid #b71c1c;
         }
 
         nav {
@@ -50,10 +49,8 @@
             color: #ff5252;
         }
 
-        /* 3. CONTAINER CENTRAL (Onde o conteúdo "flutua") */
         main {
-            position: relative; 
-            background-color: rgba(255, 255, 255, 0.95); /* Branco com leve transparência */
+            background-color: rgba(255, 255, 255, 0.95);
             width: 80%;
             max-width: 1000px;
             margin: 40px auto;
@@ -70,46 +67,87 @@
             margin: 20px 0;
         }
 
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+            margin-top: 15px;
+        }
+
         footer {
             text-align: center;
             color: white;
             padding: 20px;
             background-color: rgba(0,0,0,0.7);
         }
+
+        /* 🔥 RESPONSIVO PARA CELULAR */
+        @media (max-width: 480px) {
+
+            main {
+                width: 95%;
+                padding: 15px;
+                margin: 20px auto;
+            }
+
+            .faixa-azul h1 {
+                font-size: 22px;
+            }
+
+            .faixa-azul p {
+                font-size: 14px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+                padding: 5px 0;
+                border-bottom: 1px solid rgba(255,255,255,0.2);
+            }
+        }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <div class="faixa-azul">
-            <h1>SMARTHOUSE</h1>
-            <p>A SUA CASA INTELIGENTE!</p>
-        </div>
-        <nav>
-            <a href="home2.html">Página Inicial</a>
-            <a href="produtos.html">Ver Produtos</a>
-            <a href="contato.html">Fale Conosco</a>
-        </nav>
-    </header>
+<header>
+    <div class="faixa-azul">
+        <h1>SMARTHOUSE</h1>
+        <p>A SUA CASA INTELIGENTE!</p>
+    </div>
 
-    <main>
-        <p>Ofertas de Hoje!</p>
-        
-        <img src="banner (2).jpg" alt="Banner Smarthouse" class="banner-principal">
+    <nav>
+        <a href="home2.html">Página Inicial</a>
+        <a href="produtos.html">Ver Produtos</a>
+        <a href="contato.html">Fale Conosco</a>
+    </nav>
+</header>
 
-        <section>
-            <h2>Explore nossa página:</h2>
-            <p>Sua casa merece a melhor tecnologia do mercado.</p>
+<main>
+    <p>Ofertas de Hoje!</p>
 
-        <section>
-            <h3>Veja como funciona:</h3>
-            <video width="480" controls>
-                <source src="vitrini de produtos.mp4" type="video/mp4">
-            </video>
-        </section>
-    </main>
+    <img src="banner2.jpg" alt="Banner Smarthouse" class="banner-principal">
 
+    <section>
+        <h2>Explore nossa página:</h2>
+        <p>Sua casa merece a melhor tecnologia do mercado.</p>
+    </section>
 
+    <section>
+        <h3>Veja como funciona:</h3>
+        <video controls>
+            <source src="video-produtos.mp4" type="video/mp4">
+        </video>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 SmartHouse - Todos os direitos reservados</p>
+</footer>
 
 </body>
 </html>
