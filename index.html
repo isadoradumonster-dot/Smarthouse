@@ -7,7 +7,7 @@
 
     <style>
         body {
-            background-image: url('banner2.jpg'); /* melhor sem espaço no nome */
+            background-image: url('banner2.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
@@ -85,9 +85,11 @@
             background-color: rgba(0,0,0,0.7);
         }
 
-        /* 🔥 RESPONSIVO PARA CELULAR */
-        @media (max-width: 480px) {
+        footer p {
+            margin: 5px;
+        }
 
+        @media (max-width: 480px) {
             main {
                 width: 95%;
                 padding: 15px;
@@ -146,7 +148,27 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 SmartHouse - Todos os direitos reservados</p>
+
+<script>
+var nome = "Isadora Silva";
+var ano = "2026";
+var twitter = "@isadora_dev";
+var facebook = "isadora.silva";
+var instagram = "@isadora.dev";
+var linkedin = "isadora-silva";
+var sexo = "Feminino";
+var localizacao = "Osasco";
+
+document.write("<p>" + nome + "</p>");
+document.write("<p>Ano - " + ano + "</p>");
+document.write("<p>Twitter: " + twitter + "</p>");
+document.write("<p>Facebook: " + facebook + "</p>");
+document.write("<p>Instagram: " + instagram + "</p>");
+document.write("<p>LinkedIn: " + linkedin + "</p>");
+document.write("<p>Sexo: " + sexo + "</p>");
+document.write("<p>Localização: " + localizacao + "</p>");
+</script>
+
 </footer>
 
 </body>
